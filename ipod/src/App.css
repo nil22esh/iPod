@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 50px 50px 10px 50px;
+  font-size: 50px;
+  text-decoration: underline;
+  color: rgb(50, 61, 156);
+}
+.ipod-container {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  margin: 10px auto;
+  border-radius: 30px;
+  border: 2px double red;
+  background: radial-gradient(
+    circle at 100% 107%,
+    #d7a9c3 0%,
+    #9cb8ec 30%,
+    #00ffee 60%,
+    #62c2fe 100%
+  );
+  box-shadow: 15px 15px 30px #8d8d8d, -15px -15px 30px #ffffff;
+}
+.screen-container {
+  position: absolute;
+  width: 90%;
+  height: 45%;
+  margin: 15px 0px 0px 15px;
+  border-radius: 30px;
+  border: 4px double rgb(25, 13, 138);
+}
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.screen-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 170px;
+}
+
+.screen ul {
+  list-style: none;
+  padding: 0;
+}
+.screen li {
+  padding: 5px;
+  font-size: 1.2em;
+}
+.selected {
+  background-color: #007aff;
+  color: white;
+}
+.screen p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 35%;
+  transform: translateY(-50%);
+}
+.screen strong {
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 35%;
+  transform: translateY(-50%);
+}
+.menu-head {
+  font-size: 20px;
+  color: rgb(25, 13, 138);
+  margin: 15px 0px 0px 0px;
+}
+.buttons-container {
+  width: 90%;
+  height: 45%;
+  margin: 257px 0px 0px 15px;
+  border-radius: 30px;
+}
+.buttons {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px double rgb(25, 13, 138);
+  background-color: rgb(255, 255, 255);
+}
+.wheel {
+  width: 313px;
+  height: 225px;
+  background-color: #e9e9e9;
+  border-radius: 50%;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-button {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.forward-button {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.backward-button {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom-button {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-button {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.center-button img {
+  width: 50%;
+}
+
+.button img {
+  width: 100%;
+}
